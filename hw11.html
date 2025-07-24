@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sam's CSS Positioning</title>
+  <style>
+    body {
+      height: 2000px;
+      padding: 20px;
+    }
+
+    .static {
+      background-color: gray;
+      position: static;
+    }
+
+    .relative {
+      background-color: royalblue;
+      position: relative;
+      top: 10px;
+      left: 20px;
+    }
+
+    .absolute {
+      background-color: crimson;
+      position: absolute;
+      top: 100px;
+      left: 200px;
+    }
+
+    .fixed {
+      background-color: darkgreen;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    .sticky {
+      background-color: orange;
+      position: sticky;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box static">Static</div>
+  <div class="box relative">Relative</div>
+  <div class="box absolute">Absolute</div>
+  <div class="box fixed">Fixed</div>
+  <div class="box sticky">Sticky</div>
+</body>
+</html>
