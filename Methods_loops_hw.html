@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Numbers Project</title>
+</head>
+<body>
+  <h2>Random Numbers, Rounded Number & Current Date</h2>
+
+  <div id="output"></div>
+
+  <script>
+ 
+    let output = document.getElementById("output");
+
+
+    output.innerHTML += "<h3>Random Set of Numbers:</h3>";
+    for (let i = 0; i < 5; i++) {
+      let randomNum = Math.random() * 100; 
+      output.innerHTML += randomNum.toFixed(2) + "<br>";
+    }
+
+
+    let roundedRandom = Math.round(Math.random() * 100);
+    output.innerHTML += "<h3>Rounded Random Number:</h3>" + roundedRandom + "<br>";
+
+    
+    let currentDate = new Date();
+    output.innerHTML += "<h3>Current Date:</h3>" + currentDate;
+  </script>
+</body>
+</html>
