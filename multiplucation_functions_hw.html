@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Using Functions</title>
+</head>
+<body>
+  <h1>Multiplication Using Functions</h1>
+  <p id="result1"></p>
+  <p id="result2"></p>
+
+  <script>
+    function multiply(a, b) {
+      if (b === undefined) {
+        return a * a;
+      }
+      return a * b;
+    }
+
+    document.getElementById("result1").innerText = multiply(5, 3);
+    document.getElementById("result2").innerText = multiply(7);
+  </script>
+</body>
+</html>
