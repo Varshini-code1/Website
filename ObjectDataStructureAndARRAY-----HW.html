@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Object and Array Example</title>
+</head>
+<body>
+  <h2>Object and Array Output</h2>
+  <div id="output"></div>
+
+  <script>
+    let student = {
+      name: "Varshini",
+      age: 14,
+      grade: "Year 9"
+    };
+
+    let fruits = ["strawberry", "dragongfruit", "Mango", "apple"];
+
+    let result = "";
+    result += "Student Name: " + student.name + "<br>";
+    result += "Student Age: " + student["age"] + "<br>";
+    result += "Student Grade: " + student.grade + "<br><br>";
+
+    result += "First Fruit: " + fruits[0] + "<br>";
+    result += "Second Fruit: " + fruits[1] + "<br><br>";
+
+    result += "All Fruits (joined): " + fruits.join(", ") + "<br>";
+
+    let removedFruit = fruits.pop();
+    result += "Removed Fruit: " + removedFruit + "<br>";
+    result += "Array after pop: " + fruits + "<br>";
+
+    document.getElementById("output").innerHTML = result;
+        var V=["hello","hi","hey","bye"];
+    document.getElementById("Q").innerHTML=V[1]
+  </script>
+</body>
+</html>
