@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inhertance</title>
+</head>
+<body>
+    <script>
+        class animal{
+            speack(){
+                document.write("I am an animal <br>")
+            }
+        }
+        class dog extends animal{
+            bark(){
+                document.write("woof <br>")
+            }
+            static hello(){
+                document.write("hello from the dog")
+            }
+        }
+        var d=new dog()
+        d.speack()
+        d.bark()
+        dog.hello()
+    </script>
+</body>
+</html>
