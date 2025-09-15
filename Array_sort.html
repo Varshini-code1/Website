@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">descending</button>
+    <button onclick="f2()">ascending </button>
+    <p id="a"> </p>
+    <script>
+        var b=[6,2,8,1,9,3,0]
+        function f1(){
+            b.sort(function(a,b){return b-a})
+            document.write(b)
+        }
+        function f2(){
+            b.sort(function(a,b){return a-b})
+            document.write(b)
+        }
+    </script>
+</body>
+</html>
