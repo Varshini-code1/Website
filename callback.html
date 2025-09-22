@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="a"></h1>
+    <script>
+                function display(p){
+            document.getElementById("a").innerHTML=p
+        }
+         function add(a,b,callback){
+            var c= a+b;
+            callback(c)
+        }
+        add(2,5,display)
+    </script>
+</body>
+</html>
