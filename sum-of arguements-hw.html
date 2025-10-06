@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sum of Args</title>
+</head>
+<body>
+<h3>Sum + Trig Values</h3>
+<p id="sum"></p>
+<p id="trig"></p>
+
+<script>
+function sum(...nums){
+let total=0
+for(let n of nums){total+=n}
+return total
+}
+let s=sum(10,20,30,40,50)
+document.getElementById("sum").textContent="Sum:"+s
+</script>
+</body>
+</html>
