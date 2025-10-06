@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classes in JavaScript</title>
+</head>
+<body>
+  <h2>Classes in JavaScript Project</h2>
+  <p>Open the console to see the output.</p>
+
+  <script>
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      displayInfo() {
+        console.log(`Name: ${this.name}, Age: ${this.age}`);
+      }
+
+      static species() {
+        console.log("Humans are intelligent species.");
+      }
+    }
+
+    class Student extends Person {
+      constructor(name, age, grade) {
+        super(name, age);
+        this.grade = grade;
+      }
+
+      displayStudentInfo() {
+        console.log(`Student Grade: ${this.grade}`);
+      }
+
+      static school() {
+        console.log("Students study at school.");
+      }
+    }
+
+    const student1 = new Student("Tina", 16, "10th Grade");
+
+    student1.displayInfo();
+    student1.displayStudentInfo();
+
+    Person.species();
+    Student.school();
+  </script>
+</body>
+</html>
