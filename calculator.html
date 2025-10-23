@@ -27,11 +27,67 @@
         #keyboard{
             height: 400px;
         }
+        #result{
+            height: 120px;
+        }
+        .operator, .number, .empty{
+            height: 50px;
+            width: 50px;
+            margin: 15px;
+            float: left;
+            border-radius: 50%;
+            border-width: 0;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        #history{
+            text-align: right;
+            height: 20px;
+            margin: 0 20px;
+            padding-top: 20px;
+            font-size: 15px;
+            color: black;
+        }
+        #output{
+            text-align: right;
+            height: 50px;
+            margin:10px 20px;
+            font-size: 30px;
+        }
+        button:nth-child(4){
+            background-color: bisque;
+            font-size: 20px;
+        }
+        button:nth-child(8){
+            background-color: yellow;
+            font-size: 20px;
+
+        }
+                button:nth-child(12){
+            background-color: palevioletred;
+            font-size: 20px;
+        }
+        button:nth-child(16){
+            background-color: blueviolet;
+            font-size: 20px;
+        }
+        button:nth-child(20){
+            background-color: lightcoral;
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
     <div id="contanier">
         <div id="Calculator">
+            <div id="result">
+                <div id="history">
+                    <p id="history-value"></p>
+                </div>
+                <div id="output">
+                    <p id="output-value"></p>
+                </div>
+            </div>
             <div id="keyboard">
                 <button class="operator" id="clear">C</button>
                 <button class="operator" id="backspace">CE</button>
@@ -58,3 +114,4 @@
     </div>
 </body>
 </html>
+
